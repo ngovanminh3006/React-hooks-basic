@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import './ColorBox.scss';
 
 ColorBox.propTypes = {
@@ -21,7 +20,7 @@ function ColorBox() {
 
   function handleBoxClick() {
     const newColor = getRandomColor();
-    setColor(newColor);
+    setColor(newColor); 
 
     localStorage.setItem('box_color', newColor);
   }
